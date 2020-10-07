@@ -13,5 +13,10 @@ Pin SDA : A4
 Pin SCL : A5
 
 ESP 32:
-Pin SDA : G25
-pin SCL : G21
+Pin SDA : 21
+pin SCL : 22
+A definir avec Wire.begin(21,22)
+
+Teensy :
+Pin SDA : 18  
+Pin SCL : 19
