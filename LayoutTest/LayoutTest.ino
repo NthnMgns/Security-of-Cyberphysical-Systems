@@ -5,7 +5,7 @@ void setup() {
   // Blink the LED for 10 seconds, to give time to open 
   // a word processor or text editor to receive the test
   pinMode(ledPin, OUTPUT);
-  for (int i=0; i < 10; i++) {
+  for (int i=0; i < 5; i++) {
     digitalWrite(ledPin, HIGH);
     delay(500);
     digitalWrite(ledPin, LOW);
@@ -21,17 +21,13 @@ void setup() {
   */
 
   Keyboard.press(MODIFIERKEY_GUI);
+  Keyboard.press(KEY_R);
   Keyboard.release(MODIFIERKEY_GUI);
-  delay(1000);
-  Keyboard.press(MODIFIERKEY_GUI);
-  Keyboard.release(MODIFIERKEY_GUI);
-  delay(1000);
-  Keyboard.press(MODIFIERKEY_CTRL);
-  Keyboard.press(MODIFIERKEY_ALT);
-  Keyboard.press(KEY_T);
-  Keyboard.release(KEY_T);
-  Keyboard.release(MODIFIERKEY_ALT);
-  Keyboard.release(MODIFIERKEY_CTRL);
+  Keyboard.release(KEY_R);
+  delay(500);
+  Keyboard.press(KEY_ENTER);
+  Keyboard.release(KEY_ENTER);
+
 
 
 }
