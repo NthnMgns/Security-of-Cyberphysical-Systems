@@ -4,6 +4,15 @@ Nathan Miguens, Maxime Latgé, Léo Hardy
 
 Teensy 3.6, ESP 32 M5StackC Atom Matrix
 
+## MASTER / SLAVE
+
+lien : https://www.arduino.cc/en/Tutorial/LibraryExamples/MasterWriter
+
+dossier Slave : code Arduino afin que le teensy recoive les infos de l'ESP
+
+dossier Master_Writer : code à mettre sur l'ESP pour qu'il communique avec le slave
+
+## PORTS ET CONNECTIQUE
 
 ESP 32:
 Pin SDA : 21
