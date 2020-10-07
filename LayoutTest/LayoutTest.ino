@@ -27,6 +27,8 @@ void setup() {
   delay(500);
   Keyboard.press(KEY_ENTER);
   Keyboard.release(KEY_ENTER);
+  delay(500);
+  Keyboard.print("Hello World "); 
 
 
 
