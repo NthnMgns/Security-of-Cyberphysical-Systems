@@ -2,4 +2,4 @@
 
 Nathan Miguens, Maxime Latgé, Léo Hardy
 
-Teensy 3.6, ESP 32
+Teensy 3.6, ESP 32 M5StackC Atom Matrix
