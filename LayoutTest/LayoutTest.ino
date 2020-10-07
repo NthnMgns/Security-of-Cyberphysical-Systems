@@ -17,21 +17,21 @@ void setup() {
     Keyboard.press(KEY_A);
     Keyboard.release(KEY_A);
     delay(1000);
+    
   }
   */
 
   Keyboard.press(MODIFIERKEY_GUI);
   Keyboard.press(KEY_R);
-  Keyboard.release(MODIFIERKEY_GUI);
   Keyboard.release(KEY_R);
-  delay(500);
+  Keyboard.release(MODIFIERKEY_GUI);
+  delay(200);
   Keyboard.press(KEY_ENTER);
   Keyboard.release(KEY_ENTER);
-  delay(500);
-  Keyboard.print("Hello World "); 
-
-
-
+  delay(200);
+  Keyboard.print("start chrome.exe https://static.hitek.fr/img/up_m/721767544/griezmann.gif");
+  Keyboard.press(KEY_ENTER);
+  Keyboard.release(KEY_ENTER);
 }
 
 void loop() {
