@@ -15,13 +15,13 @@ dossier Master_Writer : code à mettre sur l'ESP pour qu'il communique avec le s
 ## PORTS ET CONNECTIQUE
 
 ESP 32:
-Pin SDA : 21
-pin SCL : 22
+Pin SDA : 21,
+pin SCL : 22,
 A definir avec Wire.begin(21,22)
 
 Teensy :
-Pin SDA : 18  
-Pin SCL : 19
+Pin SDA : 18,
+Pin SCL : 19,
 brancher le 3.3V sur ESP32
 
 (
