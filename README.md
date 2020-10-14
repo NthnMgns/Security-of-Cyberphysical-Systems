@@ -14,7 +14,7 @@ dossier Master_Writer : code à mettre sur l'ESP pour qu'il communique avec le s
 
 ## CODE "MALVEILLANT"
 
-dossier Layout Test
+dossier Teensy
 
 ## PORTS ET CONNECTIQUE
 
