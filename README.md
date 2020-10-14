@@ -13,6 +13,10 @@ checker carte SD du teensy + le parametrer en tant que clef usb
 
 Faire un coque 3D
 
+Plusieurs boutons pour plusieurs attaques
+
+Lien clavier à distance
+
 
 ## MASTER / SLAVE
 
