@@ -20,8 +20,8 @@ dossier Layout Test
 
 ESP 32:
 Pin SDA : 21,
-pin SCL : 22,
-A definir avec Wire.begin(21,22)
+pin SCL : 25,
+A definir avec Wire.begin(21,25)
 
 Teensy :
 Pin SDA : 18,
