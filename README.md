@@ -3,6 +3,16 @@
 Nathan Miguens, Maxime Latgé, Léo Hardy
 
 Teensy 3.6, ESP 32 M5StackC Atom Matrix
+## TO DO
+
+sécuriser l'envoi du message (mdp, cryptage)
+
+alimentation du ESP 32 ?
+
+checker carte SD du teensy + le parametrer en tant que clef usb
+
+Faire un coque 3D
+
 
 ## MASTER / SLAVE
 
