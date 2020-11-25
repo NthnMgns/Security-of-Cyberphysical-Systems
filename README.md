@@ -8,6 +8,7 @@ Teensy 3.6, ESP 32 M5StackC Atom Matrix
 Le projet comporte un teensyduino sur lequel est chargé un code "malveillant", et un ESP32 qui active cette attaque quand l'attaquant le souhaite.
 Ces 2 composants communiquent en i2C.
 
+![alt text](../schéma.png)
 
 ## MASTER / SLAVE
 
